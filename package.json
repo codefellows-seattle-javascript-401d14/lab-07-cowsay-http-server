@@ -1,0 +1,25 @@
+{
+  "name": "lab-07-cowsay-http-server",
+  "version": "1.0.0",
+  "description": "401 JS --  Lab 07 cowsay server ===",
+  "main": "index.js",
+  "scripts": {
+    "nodemon": "watch:  ./node_modules/nodemon/bin/nodemon.js server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thegrimheep/lab-07-cowsay-http-server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thegrimheep/lab-07-cowsay-http-server/issues"
+  },
+  "homepage": "https://github.com/thegrimheep/lab-07-cowsay-http-server#readme",
+  "dependencies": {
+    "cowsay": "^1.1.9",
+    "nodemon": "^1.11.0"
+  }
+}
