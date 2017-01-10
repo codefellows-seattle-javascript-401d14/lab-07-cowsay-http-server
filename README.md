@@ -1,3 +1,10 @@
+## Lab 7 David
+Today I was able to complete the folloing.
+  * Server side rendering
+  * Implemented an HTTP server using Nodejs
+  * Used the Cowsay API to manipulate the DOM.
+
+
 401 JS --  Lab 07 cowsay server
 ===
 
@@ -8,7 +15,7 @@
   * Submit a pull request to this repository
   * Submit a link to your pull request on canvas
   * Submit a question, observation, and how long you spent on canvas  
-  
+
 ## Learning Objectives  
 * Students will be able to implement an HTTP server using Nodejs
 
@@ -24,12 +31,12 @@ Your lab directory must include
 * **.gitignore** -- with a robust gitignore
 * **.eslintrc** -- with the class .eslintrc file
 * **.eslintignore** -- with the class .eslintignore
-* **.package.json** -- with all dependencies and dev-dependencies 
+* **.package.json** -- with all dependencies and dev-dependencies
 * **lib/** - a directory for helper modules
 * **model/** - a directory for constructor functions
 * **test/** - a directory for test modules
 * **server.js** - entry point to your program
- 
+
 #### Feature Tasks  
 * implement the following routes  
 
@@ -38,7 +45,7 @@ Your lab directory must include
  * a header containing `Content-Type: text/plain`
  * a status code of **200**
  * a response with the string "hello world"
- 
+
 ###### GET /cowsay
 * the query string should have the key value `text=<message>`
 * the response header should include `Content-Type: text/html`
@@ -74,6 +81,6 @@ Your lab directory must include
 * 3pts Tests
 * 2pts Documentation
 
-<!-- links --> 
+<!-- links -->
 [Nodejs http docs]: https://nodejs.org/api/http.html
 [Cowsay docs]: https://github.com/piuccio/cowsay
