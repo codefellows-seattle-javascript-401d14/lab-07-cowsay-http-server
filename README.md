@@ -48,7 +48,7 @@ Your lab directory must include
  * the html should have a pretag that contains the result of `cowsay.say({text: <querystring text>})`
 * if the query `text=message` is **not** set, respond with:  
  * status code = 400
- * a body including and html text
+ * a body including html text
  * the html should have a pretag that contains the result of `cowsay.say({text: 'bad request\ntry: localhost:3000/cowsay?text=howdy'})`
 
 ###### POST /cowsay
