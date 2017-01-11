@@ -13,7 +13,7 @@ const PORT = process.env.PORT || 3000;
 const server = http.createServer(function(message, response) {
   /* parse url and query */
   // url.parse turns "/api/cowsay?text=lulwat" ->
-  // { pathname: "/api/cowsay", query: "text=lulwat" }
+  //    { pathname: "/api/cowsay", query: "text=lulwat" }
   message.url = url.parse(message.url);
 
   // querystring.parse turns "text=lulwat" -> { text: 'lulwat' }
@@ -39,16 +39,6 @@ const server = http.createServer(function(message, response) {
     return;
   }
 
-  /* TODO: POST /cowsay
-    - the response header should include Content-Type: text/plain
-    - if the json {text: message} is set in the body, respond with:
-      - a status code of 200
-      - a body including the value returned from cowsay.say({text: <querystring text>})
-    - if the json{text: message}is NOT set in the body, respond with:
-      - status code = 400
-      - a body including the value returned from
-      cowsay.say({text: 'bad request\ntry: localhost:3000/cowsay?text=howdy'})
-  */
   if(message.method === 'POST' && message.url.pathname === '/cowsay') {
     return parseBodyHandler(message, function(err, body) {
       response.setHeader('Content-Type', 'text/html');
