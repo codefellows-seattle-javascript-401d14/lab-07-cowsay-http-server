@@ -1,0 +1,32 @@
+{
+  "name": "lab-07-cowsay-http-server",
+  "version": "0.0.1",
+  "description": "gnoevil lab-07",
+  "main": "server.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gnoevil/lab-07-cowsay-http-server.git"
+  },
+  "author": "geno.guerrero@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gnoevil/lab-07-cowsay-http-server/issues"
+  },
+  "homepage": "https://github.com/gnoevil/lab-07-cowsay-http-server#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^3.13.1",
+    "mocha": "^3.2.0",
+    "nodemon": "^1.11.0"
+  },
+  "dependencies": {
+    "cowsay": "^1.1.9"
+  }
+}
