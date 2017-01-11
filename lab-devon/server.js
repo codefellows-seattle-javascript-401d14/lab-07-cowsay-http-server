@@ -13,15 +13,15 @@ const server = http.createServer (function (req,res){
   req.url = url.parse(req.url);
   req.url.query = querystring.parse(req.url.query);
 
-  if(req.method === 'GET' && req.url.pathname === '/api/cowsay'){
-    res.setHeader('Content-Type', 'text/hmtl');
+  if(req.method === 'GET' && req.url.pathname === '/'){
+    res.setHeader('Content-Type', 'text/plain');
     res.statusCode = 200;
-    res.write(cowGenerator(req.url.query.text));
+    res.write('hello world');
     res.end();
     return;
   }
 
-  if(req.method === 'GET' && req.url.pathname === '/') {
+  if(req.method === 'GET' && req.url.pathname === '/cowsay') {
     if(!req.url.query.text){
       return requestErrHandler(res);
     }
@@ -32,7 +32,7 @@ const server = http.createServer (function (req,res){
     res.end();
     return;
   }
-  if(req.method === 'POST' && req.url.pathname === '/api/cowsay'){
+  if(req.method === 'POST' && req.url.pathname === '/cowsay'){
     return myParser(req, function(err,body){
       if(err){
         return requestErrHandler(res);
