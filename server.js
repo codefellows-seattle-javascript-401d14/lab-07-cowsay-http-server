@@ -20,7 +20,7 @@ const server = http.createServer(function(req, res){
       return badRequest(res);
     }
     res.statusCode = 200;
-    res.setHeader('Content-Type', ' text/html');
+    res.setHeader('Content-Type:', ' text/plain');
     res.write(generateCowSay(req.url.query.text));
     res.end();
     return;
@@ -39,13 +39,14 @@ const server = http.createServer(function(req, res){
     </body>
     </html>`;
   }
+  // cowsay.say({text: <querystring text>})
 
   if(req.method === 'GET' && req.url.pathname === '/' ) {
     if(!req.url.query.text){
       return badRequest(res);
     }
     res.statusCode = 200;
-    res.setHeader('Content-Type', ' text/html');
+    res.setHeader('Content-Type:', ' text/plain');
     res.write(generateCowSay(req.url.query.text));
     res.end();
     return;
@@ -57,7 +58,7 @@ const server = http.createServer(function(req, res){
         return badRequest(res);
       }
       res.statusCode = 200;
-      res.setHeader('Content-Type', 'text/html');
+      res.setHeader('Content-Type:', 'text/plain');
       res.write(cowsay.say({text: body.text || 'hello world'}));
       res.end();
     });
