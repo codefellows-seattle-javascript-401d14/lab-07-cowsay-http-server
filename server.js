@@ -33,7 +33,7 @@ const server = http.createServer (function (req, res){
       return errormessage(res);
     }
     else{
-      res.setHeader('Content-Type', 'text/plain');
+      res.setHeader('Content-Type', 'text/html');
       res.statusCode = 200;
       res.write(cowfunction(req.url.query.text));
       res.end();
