@@ -1,0 +1,33 @@
+{
+  "name": "lab-07-cowsay-http-server",
+  "version": "1.0.0",
+  "description": "401 JS --  Lab 07 cowsay server ===",
+  "main": "gulpfile.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/irvinemd55/lab-07-cowsay-http-server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/irvinemd55/lab-07-cowsay-http-server/issues"
+  },
+  "homepage": "https://github.com/irvinemd55/lab-07-cowsay-http-server#readme",
+  "dependencies": {
+    "chai": "^3.5.0",
+    "cowsay": "^1.1.9",
+    "gulp": "^3.9.1",
+    "gulp-eslint": "^3.0.1",
+    "gulp-mocha": "^4.1.0",
+    "mocha": "^3.2.0",
+    "nodemon": "^1.11.0"
+  }
+}
